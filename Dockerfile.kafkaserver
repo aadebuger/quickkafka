@@ -1,0 +1,8 @@
+from java 
+add kafka_2.11-0.9.0.0.tgz /opt
+add kafka-server-startsed.sh /opt/kafka-server-startsed.sh
+add server.tmpl  /opt/server.tmpl
+workdir /opt/kafka_2.11-0.9.0.0
+cmd ["sh","/opt/kafka-server-startsed.sh"]
+#cmd ["bin/kafka-server-start.sh","config/server.properties"]
+
